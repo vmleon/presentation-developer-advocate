@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Victor Martin</title>
+  <meta name="description" content="On-premise to Public cloud" />
+  <meta name="author" content="Victor Martin" />
+  <link href="css/oracle.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body class="impress-not-supported">
+  <div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
+      version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+
+  <div id="impress" data-transition-duration="1000">
+
+    <!-- Title -->
+    <div id="victor" class="step" data-rel-x="1200" data-rel-y="800">
+      <div>
+        <h1>My path to </br>developer advocate</h1>
+      </div>
+    </div>
+
+    <!-- About me -->
+    <div id="start" class="step" data-rel-x="-2000" data-rel-y="800" data-rotate="-90">
+      <h3>Long time ago...</h3>
+      <p class="fade-in fade-out" style="transition-delay: 1s">
+        I started with...</br>
+        <img src="./images/div2-games-studio.jpg" class="right fade-in fade-out" style="transition-delay: 3s" />
+        <small class="fade-in fade-out" style="transition-delay: 4s" >Div2 Game studio</small>
+      </p>
+    </div>
+
+
+    <!-- Fields -->
+    <div id="fields" class="step" data-rel-x="1300" data-rel-y="600">
+      <h2>Doing what?</h2>
+      <p class="fade-in fade-out" style="transition-delay: 1s">Financial services</p>
+      <p class="fade-in fade-out" style="transition-delay: 3s">Air traffic management</p>
+      <p class="fade-in fade-out" style="transition-delay: 5s">Business intelligence</p>
+      <p class="fade-in fade-out" style="transition-delay: 7s">API gateways and security</p>
+    </div>
+    
+    <!-- Full stack -->
+    <div id="fullstack" class="step" data-rel-x="1000" data-rel-y="1500">
+      <h2 style="text-align: center">Full stack development</h2>
+      <p class="fade-in fade-out" style="transition-delay: 1s">Web development (React.js)</p>
+      <p class="fade-in fade-out" style="transition-delay: 4s">Node, JAVA, C...</p>
+      <p class="fade-in fade-out" style="transition-delay: 8s">ElasticSearch, Cassandra, Redis, MySQL...</p>
+      <p class="fade-in fade-out" style="transition-delay: 12s">Docker & Kubernetes</p>
+    </div>
+
+    <!-- Technology -->
+    <div id="and" class="step" data-rel-x="2000" data-rel-y="1000" data-rotate="15">
+      <h4 style="text-align: center">And the technology is...</h4>
+    </div>
+    <div id="technology" class="step" data-rel-x="2000" data-rel-y="1000" data-rotate="15">
+      <h1 style="text-align: center">Event sourcing</h1>
+    </div>
+
+    <div id="problem" class="step" data-rel-x="1000" data-rel-y="800" data-rotate="30">
+      <h2>The problem</h2>
+      <p class="fade-in fade-out" style="transition-delay: 2s">Mutation of data in a </br>distributed system</p>
+    </div>
+
+    <div id="how" class="step" data-rel-x="1000" data-rel-y="800" data-rotate="60">
+      <h2>How does it work?</h2>
+      <p class="fade-in fade-out" style="transition-delay: 1s">Behaviour change less than data abstraction</p>
+      <p class="fade-in fade-out" style="transition-delay: 2s">Store events (facts)</p>
+      <p class="fade-in fade-out" style="transition-delay: 3s">State is just a projection of your events</p>
+    </div>
+
+    <div id="great" class="step" data-rel-x="1000" data-rel-y="800" data-rotate="90">
+      <h2>Cool!</h2>
+      <p class="fade-in fade-out" style="transition-delay: 1s">Multiple projections of the state</p>
+      <p class="fade-in fade-out" style="transition-delay: 2s">Friendly with storage (always appending data)</p>
+      <p class="fade-in fade-out" style="transition-delay: 3s">Retries made easy</p>
+    </div>
+    
+    <div id="downside" class="step" data-rel-x="1000" data-rel-y="800" data-rotate="120">
+      <h2>Yeah... but...</h2>
+      <p class="fade-in fade-out" style="transition-delay: 1s">Versioning of events</p>
+      <p class="fade-in fade-out" style="transition-delay: 2s">Demanding on storage and CPU</p>
+    </div>
+
+    <!-- Questions -->
+    <div id="questions" class="step" data-x="-1200" data-y="-1400" data-scale="4" style="pointer-events: none;">
+      <h1>Questions and comments about my journey?</h1>
+      <img src="./images/balloon.jpg" class="fade-in fade-out" style="transition-delay: 1s" />
+      <span class="fade-in fade-out right bottom" style="transition-delay: 5s">...and thank you!</span>
+    </div>
+  </div>
+
+
+  <div id="impress-toolbar"></div>
+
+  <div class="impress-progressbar">
+    <div></div>
+  </div>
+  <div class="impress-progress"></div>
+
+  <script type="text/javascript" src="./js/impress.js"></script>
+  <script>impress().init();</script>
+
+</body>
+
+</html>

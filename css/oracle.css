@@ -1,0 +1,368 @@
+@import url(fonts.css);
+
+.fallback-message {
+  font-family: sans-serif;
+  line-height: 1.3;
+
+  width: 780px;
+  padding: 10px 10px 0;
+  margin: 20px auto;
+
+  border: 1px solid #e4c652;
+  border-radius: 10px;
+  background: #eedc94;
+}
+
+.fallback-message p {
+  margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+  display: none;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  min-height: 740px;
+
+  background-image: url('../images/backgrounds-blue.jpg');
+  color: rgb(255, 255, 255);
+}
+
+.step {
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  margin: 20px auto;
+
+  box-sizing: border-box;
+
+  font-family: 'PT Serif', georgia, serif;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.impress-enabled .step {
+  margin: 0;
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+
+.impress-enabled .step.active {
+  opacity: 1;
+}
+
+.notes {
+  display: none;
+}
+
+.slide {
+  display: block;
+
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+
+  background-image: url(../images/backgrounds-blue.jpg);
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.slide h1,
+.slide h2,
+.slide h3 {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.slide p {
+  text-align: center;
+  margin: 0.7em;
+}
+
+.slide li {
+  margin: 0.2em;
+}
+
+.slide pre > code {
+  font-size: 14px;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+code {
+  font-family: 'Cutive mono', 'Courier New', monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(200, 200, 200, 0.2);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 0.2em;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+  border-left: 1px solid rgba(100, 100, 100, 0.2);
+
+  transition: 0.5s;
+}
+a:hover,
+a:focus {
+  background: rgba(200, 200, 200, 1);
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
+}
+
+blockquote {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+}
+
+em {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+strong {
+  text-shadow: -1px 1px 2px rgba(100, 100, 100, 0.5);
+}
+
+q {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+strike {
+  opacity: 0.7;
+}
+
+small {
+  font-size: 0.4em;
+}
+
+img {
+  width: 300px;
+}
+
+.slide .right {
+  float: right;
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.slide .left {
+  float: left;
+  margin-right: 40px;
+  margin-left: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.slide .top {
+  position: absolute;
+  top: 20px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.slide .bottom {
+  position: absolute;
+  bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.title {
+  background-image: url(../images/backgrounds-blue.jpg);
+}
+
+.title h1,
+.title h2,
+.title h3 {
+  position: absolute;
+  left: 45px; /* slide width is 900px, so this is like a 5% margin on both sides */
+  width: 90%;
+  text-align: center;
+}
+.title h1 {
+  top: 50px;
+}
+.title h2 {
+  top: 400px;
+}
+.title h3 {
+  top: 500px;
+}
+
+.future .fly-in {
+  transform: translateY(-700px);
+  opacity: 0; /* Make it invisible, just so it doesn't clutter some other slide that might be in the position where we moved it */
+}
+.present .fly-in {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 2s;
+}
+.past .fly-out {
+  transform: translateY(700px);
+  opacity: 0;
+  transition: 2s;
+}
+
+.future .fade-in {
+  opacity: 0;
+}
+.present .fade-in {
+  opacity: 1;
+  transition: 3s;
+}
+.past .fade-out {
+  opacity: 0;
+  transition: 3s;
+}
+
+.future .zoom-in {
+  transform: scale(10);
+  opacity: 0;
+}
+.present .zoom-in {
+  transform: scale(1);
+  opacity: 1;
+  transition: 3s;
+}
+.past .zoom-out {
+  transform: scale(10);
+  opacity: 0;
+}
+
+.impress-enabled div#impress-toolbar {
+  position: fixed;
+  right: 1px;
+  bottom: 1px;
+  opacity: 0.6;
+  z-index: 10;
+}
+.impress-enabled div#impress-toolbar > span {
+  margin-right: 10px;
+}
+
+body.impress-mouse-timeout div#impress-toolbar {
+  display: none;
+}
+
+body.impress-mouse-timeout {
+  cursor: none;
+}
+
+.impress-progressbar {
+  position: absolute;
+  right: 118px;
+  bottom: 1px;
+  left: 118px;
+  border-radius: 7px;
+  border: 2px solid rgba(100, 100, 100, 0.2);
+}
+.impress-progressbar div {
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(75, 75, 75, 0.4);
+  transition: width 1s linear;
+}
+.impress-progress {
+  position: absolute;
+  left: 59px;
+  bottom: 1px;
+  text-align: left;
+  font-size: 10pt;
+  opacity: 0.6;
+}
+
+.impress-enabled #impress-help {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  color: #eeeeee;
+  font-size: 80%;
+  position: fixed;
+  left: 2em;
+  bottom: 2em;
+  width: 24em;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  z-index: 100;
+  font-family: Verdana, Arial, Sans;
+}
+.impress-enabled #impress-help td {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#impress .step .substep {
+  opacity: 0;
+}
+
+#impress .step .substep.substep-visible {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#acme-graph-bottom {
+  position: absolute;
+  bottom: 100px;
+  left: 440px;
+  background-color: black;
+  width: 410px;
+  height: 2px;
+}
+
+#acme-graph-q1,
+#acme-graph-q2,
+#acme-graph-q3,
+#acme-graph-q4 {
+  border: solid 1px black;
+  width: 70px;
+  margin-left: 10px;
+  position: absolute;
+  bottom: 100px;
+}
+
+#acme-graph-q1 {
+  background-color: red;
+  left: 450px;
+}
+
+#acme-graph-q2 {
+  background-color: blue;
+  left: 550px;
+}
+
+#acme-graph-q3 {
+  background-color: green;
+  left: 650px;
+}
+
+#acme-graph-q4 {
+  background-color: purple;
+  left: 750px;
+}
+
+.impress-enabled {
+  pointer-events: none;
+}
+.impress-enabled #impress {
+  pointer-events: auto;
+}
+.impress-enabled #impress-toolbar {
+  pointer-events: auto;
+}
+.impress-enabled #impress-console-button {
+  pointer-events: auto;
+}
